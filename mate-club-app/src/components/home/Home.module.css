@@ -1,22 +1,26 @@
 .actions {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .actions p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .actions a {
   text-decoration: none;
-  background-color: #347be6;
+  font: inherit;
+  cursor: pointer;
+  background-color: #4a3fee;
   color: white;
-  padding: 1em 1.5em;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #4a3fee;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-.actions a:hover {
-  background-color: #558cdd;
-}
-
+.actions a:hover,
 .actions a:active {
-  background-color: #558cdd;
+  text-decoration: none;
+  background-color: #5188db;
+  border-color: #5188db;
 }

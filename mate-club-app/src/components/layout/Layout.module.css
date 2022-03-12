@@ -1,5 +1,12 @@
+.box {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .main {
-  margin: 3rem auto;
+  align-self: center;
   width: 90%;
   max-width: 40rem;
 }
