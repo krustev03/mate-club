@@ -31,6 +31,16 @@ function MainNavigation() {
           )}
           {authCtx.isLoggedIn && (
             <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+          )}
+          {authCtx.isLoggedIn && (
+            <li>
+              <Link to="/add-post">Add Post</Link>
+            </li>
+          )}
+          {authCtx.isLoggedIn && (
+            <li>
               <Link to="/posts">Posts</Link>
             </li>
           )}

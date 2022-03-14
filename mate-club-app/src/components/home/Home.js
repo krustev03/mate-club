@@ -8,6 +8,8 @@ import classes from "./Home.module.css";
 const Home = () => {
   const authCtx = useContext(AuthContext);
 
+  const userEmail = authCtx.userEmail;
+
   let content;
 
   if (!authCtx.isLoggedIn) {
@@ -27,7 +29,7 @@ const Home = () => {
   } else {
     content = (
       <Wrapper>
-        <h1>Hello, [User]!</h1>
+        <h1>Hello, {userEmail}!</h1>
         <div className={classes.actions}>
           <p>Wonder what your mates are doing? Go and see their newest posts!</p>
           <Link to="/posts">Posts</Link>

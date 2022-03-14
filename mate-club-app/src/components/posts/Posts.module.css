@@ -1,0 +1,9 @@
+.posts {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+}
+
+.posts h1 {
+    margin-bottom: 5px;
+}
