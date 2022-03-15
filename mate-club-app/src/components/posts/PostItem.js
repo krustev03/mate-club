@@ -1,11 +1,15 @@
-import Card from '../ui/Card';
+import Card from "../ui/Card";
 
-const PostItem = () => {
-    return <Card>
-      <h1>TITLE</h1>
-      <p>DESCRIPTION</p>
-      <p>DATE</p>
-    </Card>;
-  };
-  
-  export default PostItem;
+const PostItem = (props) => {
+  return (
+    <li>
+      <Card>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+        <p>{props.date}</p>
+      </Card>
+    </li>
+  );
+};
+
+export default PostItem;

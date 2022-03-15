@@ -13,12 +13,12 @@ const ProfileForm = () => {
     const enteredNewPassword = newPasswordInputRef.current.value;
 
     fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBfrQCWpsnhI14mkPWnZf2jnG3XgQ8QuYQ",
+      "https://identitytoolkit.googleapis.com/v1/accounts:resetPassword?key=AIzaSyBfrQCWpsnhI14mkPWnZf2jnG3XgQ8QuYQ",
       {
         method: "POST",
         body: JSON.stringify({
-          idToken: authCtx.token,
-          password: enteredNewPassword,
+          tenantId: authCtx.token,
+          newPassword: enteredNewPassword,
           returnSecureToken: false,
         }),
         header: {

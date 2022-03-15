@@ -46,7 +46,9 @@ function MainNavigation() {
           )}
           {authCtx.isLoggedIn && (
             <li>
-              <Link to="/" onClick={logoutHandler}>Logout</Link>
+              <Link to="/" onClick={logoutHandler}>
+                Logout
+              </Link>
             </li>
           )}
         </ul>
